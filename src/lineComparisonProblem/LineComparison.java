@@ -11,12 +11,22 @@ public class LineComparison {
         System.out.println("Length of line 2: " + length2);
 
         equal(length,length2);
+        compate(length,length2);
     }
     static void equal(double length1,double length2){
         if(length1==length2){
             System.out.println("Two lines are Equal");
         }else {
             System.out.println("Two Lines are Not equal");
+        }
+    }
+    static void compate(double length1,double length2){
+        if(length1==length2){
+            System.out.println("Two lines are Equal");
+        }else if(length1<length2){
+            System.out.println("length 1 is less than length 2");
+        }else {
+            System.out.println("length 1 is greater than length 2");
         }
     }
 }
